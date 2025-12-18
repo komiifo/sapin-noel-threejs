@@ -37,7 +37,7 @@ Ce projet presente une scene de Noel immersive construite avec React et Three.js
 1. Cloner le repository
 
 ```bash
-git clone <url-du-repository>
+git clone https://github.com/komiifo/sapin-noel-threejs
 cd sapin-noel
 ```
 
@@ -57,12 +57,12 @@ npm run dev
 
 ## Scripts disponibles
 
-| Commande | Description |
-|----------|-------------|
-| `npm run dev` | Lance le serveur de developpement avec Hot Module Replacement |
-| `npm run build` | Compile l'application pour la production |
-| `npm run preview` | Previsualise la version de production |
-| `npm run lint` | Execute ESLint pour verifier le code |
+| Commande            | Description                                                   |
+| ------------------- | ------------------------------------------------------------- |
+| `npm run dev`     | Lance le serveur de developpement avec Hot Module Replacement |
+| `npm run build`   | Compile l'application pour la production                      |
+| `npm run preview` | Previsualise la version de production                         |
+| `npm run lint`    | Execute ESLint pour verifier le code                          |
 
 ## Structure du projet
 
@@ -91,17 +91,20 @@ sapin-noel/
 Le composant `ChristmasTree.jsx` contient l'integralite de la logique Three.js :
 
 **Configuration de la scene**
+
 - Scene avec fond sombre et effet de brouillard
 - Camera perspective avec position initiale ajustable
 - Renderer WebGL avec antialiasing et shadow mapping
 
 **Eclairage**
+
 - Lumiere ambiante pour l'eclairage global
 - Lumiere directionnelle simulant la lune
 - Lumieres ponctuelles pour le halo au sol
 - Lumieres colorees sur les guirlandes
 
 **Objets 3D**
+
 - Tronc : cylindre avec materiau brun
 - Feuillage : 4 cones superposes avec materiau vert
 - Etoile : forme extrudee avec materiau emissif dore
@@ -111,6 +114,7 @@ Le composant `ChristmasTree.jsx` contient l'integralite de la logique Three.js :
 - Cadeaux : boites avec rubans et noeuds
 
 **Animations**
+
 - Rotation continue du sapin
 - Pulsation des boules de decoration
 - Clignotement des guirlandes lumineuses
@@ -126,6 +130,7 @@ Le composant `ChristmasTree.jsx` contient l'integralite de la logique Three.js :
 ### Nettoyage
 
 Le composant implemente un cleanup complet dans le useEffect pour :
+
 - Supprimer les event listeners
 - Retirer le canvas du DOM
 - Liberer les ressources Three.js
@@ -136,12 +141,14 @@ Le composant implemente un cleanup complet dans le useEffect pour :
 ### Vite
 
 Le fichier `vite.config.js` configure :
+
 - Le plugin React avec Babel pour Fast Refresh
 - Le plugin Tailwind CSS pour le traitement des styles
 
 ### ESLint
 
 Configuration avec :
+
 - Regles recommandees pour JavaScript
 - Plugin React Hooks
 - Plugin React Refresh pour Vite
@@ -197,6 +204,7 @@ for (let i = 0; i < 500; i++) { // Modifier 500 pour plus ou moins de flocons
 ## Compatibilite navigateur
 
 L'application necessite un navigateur supportant WebGL :
+
 - Chrome (recommande)
 - Firefox
 - Safari
@@ -205,6 +213,7 @@ L'application necessite un navigateur supportant WebGL :
 ## Performances
 
 Pour de meilleures performances :
+
 - La scene utilise des geometries optimisees avec un nombre limite de segments
 - Les flocons de neige sont recycles au lieu d'etre recrees
 - Le renderer utilise `requestAnimationFrame` pour une animation fluide
