@@ -38,7 +38,7 @@ Ce projet presente une scene de Noel immersive construite avec React et Three.js
 
 ```bash
 git clone https://github.com/komiifo/sapin-noel-threejs
-cd sapin-noel
+cd sapin-noel-threejs
 ```
 
 2. Installer les dependances

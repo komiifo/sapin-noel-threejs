@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Tree layers -->
+  <polygon points="16,6 10,14 22,14" fill="#1a5c32"/>
+  <polygon points="16,10 8,18 24,18" fill="#1a5c32"/>
+  <polygon points="16,14 6,24 26,24" fill="#1a5c32"/>
+
+  <!-- Trunk -->
+  <rect x="13" y="24" width="6" height="5" fill="#4a3728"/>
+
+  <!-- Star -->
+  <polygon points="16,2 17,5 20,5 17.5,7 18.5,10 16,8 13.5,10 14.5,7 12,5 15,5" fill="#ffd700"/>
+
+  <!-- Ornaments -->
+  <circle cx="13" cy="12" r="1.5" fill="#ff0044"/>
+  <circle cx="19" cy="13" r="1.5" fill="#0066ff"/>
+  <circle cx="11" cy="17" r="1.5" fill="#ffd700"/>
+  <circle cx="21" cy="17" r="1.5" fill="#ff6600"/>
+  <circle cx="14" cy="21" r="1.5" fill="#00ff88"/>
+  <circle cx="18" cy="21" r="1.5" fill="#ff00ff"/>
+</svg>

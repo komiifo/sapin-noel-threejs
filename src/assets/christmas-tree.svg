@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="treeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a27"/>
+      <stop offset="100%" style="stop-color:#1a3d1a"/>
+    </linearGradient>
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffaa00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tree layers -->
+  <polygon points="50,20 30,45 70,45" fill="url(#treeGradient)"/>
+  <polygon points="50,30 25,55 75,55" fill="url(#treeGradient)"/>
+  <polygon points="50,40 20,70 80,70" fill="url(#treeGradient)"/>
+
+  <!-- Trunk -->
+  <rect x="42" y="70" width="16" height="15" fill="#4a3728" rx="2"/>
+
+  <!-- Star -->
+  <polygon points="50,8 52,14 58,14 53,18 55,24 50,20 45,24 47,18 42,14 48,14" fill="url(#starGradient)"/>
+
+  <!-- Ornaments -->
+  <circle cx="40" cy="38" r="3" fill="#ff0044"/>
+  <circle cx="58" cy="42" r="3" fill="#0066ff"/>
+  <circle cx="35" cy="52" r="3" fill="#ffd700"/>
+  <circle cx="62" cy="55" r="3" fill="#ff6600"/>
+  <circle cx="45" cy="60" r="3" fill="#00ff88"/>
+  <circle cx="55" cy="65" r="3" fill="#ff00ff"/>
+  <circle cx="30" cy="65" r="3" fill="#ff0044"/>
+  <circle cx="70" cy="62" r="3" fill="#0066ff"/>
+</svg>
